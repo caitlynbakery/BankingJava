@@ -9,4 +9,14 @@ public class Customer {
     Customer(String name){
         this.name = name;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void printTransactions(){
+        for(int i = 0; i<transactionArrayList.size(); i++){
+            System.out.println(this.name + " " + transactionArrayList.get(i));
+        }
+    }
 }
