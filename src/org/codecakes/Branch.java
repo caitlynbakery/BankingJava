@@ -13,6 +13,10 @@ public class Branch {
         customer.transactionArrayList.add(transaction);
     }
 
+    public String getName(){
+        return this.name;
+    }
+
     public void addTransaction(double transaction, String customerName){
 
         Customer customer;

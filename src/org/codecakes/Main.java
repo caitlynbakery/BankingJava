@@ -11,5 +11,11 @@ public class Main {
         palo_alto.addCustomer(bobby, 23.0);
         palo_alto.addTransaction(29.0, "Caitlyn");
         palo_alto.addTransaction(33.0, "bobby");
+
+        Bank chase = new Bank();
+        chase.addNewBranch(new Branch("Mountain View"));
+        chase.addNewBranch(palo_alto);
+        chase.addTransaction(122, "Caitlyn", "Palo Alto");
+        chase.printCustomer();
     }
 }
